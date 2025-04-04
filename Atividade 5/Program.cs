@@ -7,7 +7,21 @@
 
         if (num == 0)
         {
-            Console.WriteLine();
+            Console.WriteLine($"O numero {num} é zero");
+        }
+
+        else if (num <0) 
+        {
+
+            Console.WriteLine($"o nume {num} é negativo");
+               
+        }
+
+        else if (num >0)
+        {
+
+            Console.WriteLine($"o numero {num} é positivo ");
+
         }
     }
 }
