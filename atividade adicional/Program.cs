@@ -22,7 +22,15 @@
                 break;
             case '3': Console.WriteLine("resultado: " + (num1 * num2));
                 break;
-            case '4': Console.WriteLine("resultado: " + (num1 / num2));
+            case '4': 
+                if (num2 == 0)
+                {
+                    Console.WriteLine("Operação impossivel ");
+                }
+
+                else { 
+                Console.WriteLine("resultado: " + (num1 / num2));
+                }
                 break;
             default: Console.WriteLine("Erro de digitação"); 
                 break;
