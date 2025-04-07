@@ -2,43 +2,30 @@
 {
     public static void Main()
     {
-        Console.WriteLine("escolha uma operação:");
-        Console.WriteLine("1 - Soma");
-        Console.WriteLine("2 - Subtração");
-        Console.WriteLine("3 - Multiplicação");
-        Console.WriteLine("4 - Divisão");
-        char num1 = Convert.ToChar(Console.ReadLine());
+        //• Nota ≥ 9 → "A"  • Nota ≥ 7 → "B"  • Nota ≥ 5 → "C"  • Nota < 5 → "D"
+        Console.WriteLine("Digite a nota do aluno: ");
+        int nota = Convert.ToInt32(Console.ReadLine());
 
-        Console.WriteLine("digite número 1:");
-        int num2 = Convert.ToInt32( Console.ReadLine());
+        if (nota > 9)
+        {
+            Console.WriteLine("Sua nota é A");
+        }
 
-        Console.WriteLine("digite número 2:");
-        int num3 = Convert.ToInt32(Console.ReadLine());
+        else if (nota > 7)
+        {
+            Console.WriteLine("Sua nota é B");
+        }
+
+        else if (nota > 5)
+        {
+            Console.WriteLine("Sua nota é C");
+        }
+
+        else if (nota < 5)
+        {
+            Console.WriteLine("Sua nota é D");
+        }
 
 
-        if (num1 == '1')
-        {
-            int soma = num2 + num3;
-            Console.WriteLine("Resultado da operação");
-            Console.WriteLine(soma);
-        }
-        else if (num1  == '2')
-        {
-            int subtração = num2 - num3;
-            Console.WriteLine("Resultado da operação");
-            Console.WriteLine(subtração);
-        }
-        else if (num1 == '3')
-        {
-            int multiplicação = num2 * num3;
-            Console.WriteLine("Resultado da operação");
-            Console.WriteLine(multiplicação);
-        }
-        else if (num1 == '4')
-        {
-            int divisão = num2 / num3;
-            Console.WriteLine("Resultado da operação");
-            Console.WriteLine(divisão);
-        }
     }
 }
